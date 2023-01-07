@@ -1,6 +1,6 @@
-## Employee_churn_prediction
+##  Employee_churn_prediction
 
-**Business Case: OLA - Ensemble Learning**
+### Business Case: OLA - Ensemble Learning**
 
 ***Problem Statement:***
 
@@ -36,7 +36,7 @@ You are working as a data scientist with the Analytics Department of Ola, focuse
 14.	Provide actionable Insights & Recommendations
 
 
-**EDA | ML model building**
+### EDA | ML model building
 
 Recruiting and retaining drivers is seen by industry watchers as a tough battle for Ola. Churn among drivers is high and it’s very easy for drivers to stop working for the service on the fly or jump to Uber depending on the rates. Losing drivers frequently impacts the morale of the organization and acquiring new drivers is more expensive than retaining existing ones.
 
