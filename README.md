@@ -9,30 +9,42 @@ Recruiting and retaining drivers is seen by industry watchers as a tough battle 
 As the companies get bigger, the high churn could become a bigger problem. To find new drivers, Ola is casting a wide net, including people who don’t have cars for jobs. But this acquisition is really costly. Losing drivers frequently impacts the morale of the organization and acquiring new drivers is more expensive than retaining existing ones.
 
 You are working as a data scientist with the Analytics Department of Ola, focused on driver team attrition. You are provided with the monthly information for a segment of drivers for 2019 and 2020 and tasked to predict whether a driver will be leaving the company or not based on their attributes like
-•	Demographics (city, age, gender etc.)
-•	Tenure information (joining date, Last Date)
+
+•	Demographics (city, age, gender etc.)\
+•	Tenure information (joining date, Last Date)\
 •	Historical data regarding the performance of the driver (Quarterly rating, Monthly business acquired, grade, Income)
 
 What does ‘good’ look like?
-•	Import the dataset and do usual exploratory analysis steps like checking the structure & characteristics of the dataset.\
-•	Convert date-like features to their respective data type\
-•	Check for missing values and Prepare data for KNN Imputation\
+•	Import the dataset and do usual exploratory analysis steps like checking the structure & characteristics of the dataset.
+
+•	Convert date-like features to their respective data type
+
+•	Check for missing values and Prepare data for KNN Imputation
     o	You may consider only numerical features for this purpose
-•	Aggregate data in order to remove multiple occurrences of same driver data \
+
+•	Aggregate data in order to remove multiple occurrences of same driver data 
     o	You can start from storing unique Driver IDs in an empty dataframe and then bring all the features at same level (Groupby Driver ID)
+
 •	Feature Engineering Steps:
     o	Create a column which tells whether the quarterly rating has increased for that driver - for those whose quarterly rating has increased we assign the value 1
     o	Target variable creation: Create a column called target which tells whether the driver has left the company- driver whose last working day is present will have the value 1
     o	Create a column which tells whether the monthly income has increased for that driver - for those whose monthly income has increased we assign the value 1
-•	Statistical summary of the derived dataset\
-•	Check correlation among independent variables and how they interact with each other\
-•	One hot encoding of the categorical variable\
-•	Class Imbalance Treatment\
-•	Standardization of training data\
-•	Using Ensemble learning - Bagging, Boosting methods with some hyper-parameter tuning\
+•	Statistical summary of the derived dataset
+
+•	Check correlation among independent variables and how they interact with each other
+
+•	One hot encoding of the categorical variable
+
+•	Class Imbalance Treatment
+
+•	Standardization of training data
+
+•	Using Ensemble learning - Bagging, Boosting methods with some hyper-parameter tuning
+
 •	Results Evaluation:
     o	Classification Report
     o	ROC AUC curve
+
 •	Provide actionable Insights & Recommendations
 
 
