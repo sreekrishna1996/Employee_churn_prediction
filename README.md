@@ -1,4 +1,4 @@
-##  Employee_churn_prediction
+##  Employee churn prediction
 
 ### Business Case: OLA - Ensemble Learning
 
