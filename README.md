@@ -1,9 +1,8 @@
 # Employee_churn_prediction
 
-Business Case: OLA - Ensemble Learning
+**Business Case: OLA - Ensemble Learning**
 
-Problem Statement:
-
+***Problem Statement:***\
 Recruiting and retaining drivers is seen by industry watchers as a tough battle for Ola. Churn among drivers is high and it’s very easy for drivers to stop working for the service on the fly or jump to Uber depending on the rates.
 
 As the companies get bigger, the high churn could become a bigger problem. To find new drivers, Ola is casting a wide net, including people who don’t have cars for jobs. But this acquisition is really costly. Losing drivers frequently impacts the morale of the organization and acquiring new drivers is more expensive than retaining existing ones.
@@ -14,41 +13,28 @@ You are working as a data scientist with the Analytics Department of Ola, focuse
 •	Tenure information (joining date, Last Date)\
 •	Historical data regarding the performance of the driver (Quarterly rating, Monthly business acquired, grade, Income)
 
-What does ‘good’ look like?
-•	Import the dataset and do usual exploratory analysis steps like checking the structure & characteristics of the dataset.
-
-•	Convert date-like features to their respective data type
-
-•	Check for missing values and Prepare data for KNN Imputation
-    o	You may consider only numerical features for this purpose
-
-•	Aggregate data in order to remove multiple occurrences of same driver data 
-    o	You can start from storing unique Driver IDs in an empty dataframe and then bring all the features at same level (Groupby Driver ID)
-
+***What does ‘good’ look like?***\
+•	Import the dataset and do usual exploratory analysis steps like checking the structure & characteristics of the dataset.\
+•	Convert date-like features to their respective data type\
+•	Check for missing values and Prepare data for KNN Imputation. You may consider only numerical features for this purpose.\
+•	Aggregate data in order to remove multiple occurrences of same driver data. You can start from storing unique Driver IDs in an empty dataframe and then bring all the features at same level (Groupby Driver ID).\
 •	Feature Engineering Steps:
-    o	Create a column which tells whether the quarterly rating has increased for that driver - for those whose quarterly rating has increased we assign the value 1
-    o	Target variable creation: Create a column called target which tells whether the driver has left the company- driver whose last working day is present will have the value 1
-    o	Create a column which tells whether the monthly income has increased for that driver - for those whose monthly income has increased we assign the value 1
-•	Statistical summary of the derived dataset
-
-•	Check correlation among independent variables and how they interact with each other
-
-•	One hot encoding of the categorical variable
-
-•	Class Imbalance Treatment
-
-•	Standardization of training data
-
-•	Using Ensemble learning - Bagging, Boosting methods with some hyper-parameter tuning
-
+1.	Create a column which tells whether the quarterly rating has increased for that driver - for those whose quarterly rating has increased we assign the value 1
+2.	Target variable creation: Create a column called target which tells whether the driver has left the company- driver whose last working day is present will have the value 1
+3.	Create a column which tells whether the monthly income has increased for that driver - for those whose monthly income has increased we assign the value 1
+•	Statistical summary of the derived dataset\
+•	Check correlation among independent variables and how they interact with each other\
+•	One hot encoding of the categorical variable\
+•	Class Imbalance Treatment\
+•	Standardization of training data\
+•	Using Ensemble learning - Bagging, Boosting methods with some hyper-parameter tuning\
 •	Results Evaluation:
-    o	Classification Report
-    o	ROC AUC curve
+1. Classification Report
+2. ROC AUC curve
+•	Provide actionable Insights & Recommendations\
 
-•	Provide actionable Insights & Recommendations
 
-
-EDA | ML model building
+**EDA | ML model building**
 
 Recruiting and retaining drivers is seen by industry watchers as a tough battle for Ola. Churn among drivers is high and it’s very easy for drivers to stop working for the service on the fly or jump to Uber depending on the rates. Losing drivers frequently impacts the morale of the organization and acquiring new drivers is more expensive than retaining existing ones.
 
