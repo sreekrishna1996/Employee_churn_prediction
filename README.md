@@ -9,29 +9,29 @@ As the companies get bigger, the high churn could become a bigger problem. To fi
 
 You are working as a data scientist with the Analytics Department of Ola, focused on driver team attrition. You are provided with the monthly information for a segment of drivers for 2019 and 2020 and tasked to predict whether a driver will be leaving the company or not based on their attributes like
 
-•	Demographics (city, age, gender etc.)\
-•	Tenure information (joining date, Last Date)\
-•	Historical data regarding the performance of the driver (Quarterly rating, Monthly business acquired, grade, Income)
+1.	Demographics (city, age, gender etc.)\
+2.	Tenure information (joining date, Last Date)\
+3.	Historical data regarding the performance of the driver (Quarterly rating, Monthly business acquired, grade, Income)
 
 ***What does ‘good’ look like?***\
-•	Import the dataset and do usual exploratory analysis steps like checking the structure & characteristics of the dataset.\
-•	Convert date-like features to their respective data type\
-•	Check for missing values and Prepare data for KNN Imputation. You may consider only numerical features for this purpose.\
-•	Aggregate data in order to remove multiple occurrences of same driver data. You can start from storing unique Driver IDs in an empty dataframe and then bring all the features at same level (Groupby Driver ID).\
-•	Feature Engineering Steps:
-1.	Create a column which tells whether the quarterly rating has increased for that driver - for those whose quarterly rating has increased we assign the value 1
-2.	Target variable creation: Create a column called target which tells whether the driver has left the company- driver whose last working day is present will have the value 1
-3.	Create a column which tells whether the monthly income has increased for that driver - for those whose monthly income has increased we assign the value 1
-•	Statistical summary of the derived dataset\
-•	Check correlation among independent variables and how they interact with each other\
-•	One hot encoding of the categorical variable\
-•	Class Imbalance Treatment\
-•	Standardization of training data\
-•	Using Ensemble learning - Bagging, Boosting methods with some hyper-parameter tuning\
-•	Results Evaluation:
-1. Classification Report
-2. ROC AUC curve
-•	Provide actionable Insights & Recommendations\
+2.	Import the dataset and do usual exploratory analysis steps like checking the structure & characteristics of the dataset.\
+2.	Convert date-like features to their respective data type\
+3.	Check for missing values and Prepare data for KNN Imputation. You may consider only numerical features for this purpose.\
+4.	Aggregate data in order to remove multiple occurrences of same driver data. You can start from storing unique Driver IDs in an empty dataframe and then bring all the features at same level (Groupby Driver ID).\
+5.	Feature Engineering Steps:
+*	Create a column which tells whether the quarterly rating has increased for that driver - for those whose quarterly rating has increased we assign the value 1
+*	Target variable creation: Create a column called target which tells whether the driver has left the company- driver whose last working day is present will have the value 1
+*	Create a column which tells whether the monthly income has increased for that driver - for those whose monthly income has increased we assign the value 1
+6.	Statistical summary of the derived dataset\
+7.	Check correlation among independent variables and how they interact with each other\
+8.	One hot encoding of the categorical variable\
+10.	Class Imbalance Treatment\
+11.	Standardization of training data\
+12.	Using Ensemble learning - Bagging, Boosting methods with some hyper-parameter tuning\
+13.	Results Evaluation:
+* Classification Report
+* ROC AUC curve
+14.	Provide actionable Insights & Recommendations\
 
 
 **EDA | ML model building**
